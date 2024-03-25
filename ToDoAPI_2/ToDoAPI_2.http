@@ -1,0 +1,34 @@
+﻿@ToDoAPI_2_HostAddress = https://localhost:7239
+
+POST {{ToDoAPI_2_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"sleep",
+  "isComplete":true
+}
+###
+
+GET {{ToDoAPI_2_HostAddress}}/todoitems
+
+###
+
+GET {{ToDoAPI_2_HostAddress}}/todoitems/1
+
+###
+
+PUT {{ToDoAPI_2_HostAddress}}/todoitems/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "feed fish",
+  "isComplete": false
+}
+
+###
+
+DELETE {{ToDoAPI_2_HostAddress}}/todoitems/1
+
+
+###
